@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
+import Button from '@/components/button';
 
 import './App.css';
 
@@ -32,6 +33,7 @@ const App: React.FC = () => {
 			<p className="read-the-docs">
 				Click on the Vite and React logos to learn more
 			</p>
+			<Button></Button>
 		</div>
 	);
 };
