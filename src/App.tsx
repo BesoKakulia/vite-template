@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import type React from 'react';
+import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
-function App(): React.FunctionComponent {
+
+const App: React.FC = () => {
 	const [count, setCount] = useState(0);
 
 	return (
@@ -32,6 +34,6 @@ function App(): React.FunctionComponent {
 			</p>
 		</div>
 	);
-}
+};
 
 export default App;
