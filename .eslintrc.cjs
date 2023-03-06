@@ -7,7 +7,6 @@ module.exports = {
 		'plugin:react/recommended',
 		'standard-with-typescript',
 		'plugin:prettier/recommended',
-		'plugin:react/jsx-runtime',
 	],
 	overrides: [],
 	parserOptions: {
@@ -16,5 +15,7 @@ module.exports = {
 		project: ['./tsconfig.json'],
 	},
 	plugins: ['react', 'prettier'],
-	rules: {},
+	rules: {
+		'react/react-in-jsx-scope': 'off',
+	},
 };
