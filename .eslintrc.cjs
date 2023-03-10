@@ -17,5 +17,12 @@ module.exports = {
 	plugins: ['react', 'prettier'],
 	rules: {
 		'react/react-in-jsx-scope': 'off',
+		'react/self-closing-comp': [
+			'error',
+			{
+				component: true,
+				html: true,
+			},
+		],
 	},
 };
