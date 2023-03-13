@@ -1,11 +1,12 @@
-import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import Button from '@/components/button';
+import useAppState from '@/store/appStore';
 
-import './App.css';
+import './App.scss';
 
 const App: React.FC = () => {
-	const [count, setCount] = useState(0);
+	const count = useAppState((state) => state.count);
+	const increase = useAppState((state) => state.increase);
 
 	return (
 		<div className="App">
@@ -19,13 +20,7 @@ const App: React.FC = () => {
 			</div>
 			<h1>Vite + React</h1>
 			<div className="card">
-				<button
-					onClick={() => {
-						setCount((count) => count + 1);
-					}}
-				>
-					count is {count}
-				</button>
+				<button onClick={increase}>count is {count}</button>
 				<p>
 					Edit <code>src/App.tsx</code> and save to test HMR
 				</p>
