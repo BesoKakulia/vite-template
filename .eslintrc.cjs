@@ -6,8 +6,14 @@ module.exports = {
 	extends: [
 		'plugin:react/recommended',
 		'standard-with-typescript',
-		'plugin:prettier/recommended',
+		'plugin:react-hooks/recommended',
+		'prettier',
 	],
+	settings: {
+		react: {
+			version: 'detect',
+		},
+	},
 	overrides: [],
 	parserOptions: {
 		ecmaVersion: 'latest',
@@ -24,5 +30,8 @@ module.exports = {
 				html: true,
 			},
 		],
+		'react/jsx-curly-brace-presence': 2,
+		'@typescript-eslint/explicit-function-return-type': 'off',
+		'@typescript-eslint/restrict-template-expressions': 'off',
 	},
 };
