@@ -26,7 +26,28 @@
       ],
       "@/store/*": [
         "store/*"
-      ]
+      ],
+      "@/features/*": [
+        "features/*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
+      ],
+      "@/api/*": [
+        "api/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/utils/*": [
+        "utils/*"
+      ],
+      "@/routes/*": [
+        "routes/*"
+      ],
     },
     "types": [
       "node"
