@@ -9,7 +9,15 @@
 	"endOfLine": "auto",
 	"importOrder": [
 		"<THIRD_PARTY_MODULES>",
-		"^@/(.*)$",
+		"^@/assets(.*)$",
+		"^@/lib(.*)$",
+		"^@/api(.*)$",
+		"^@/routes(.*)$",
+		"^@/hooks(.*)$",
+		"^@/components(.*)$",
+		"^@/store(.*)$",
+		"^@/features(.*)$",
+		"^@/utils(.*)$",
 		"^[./].*(?<!scss|css)$",
 		"^./*.*.(css|scss)"
 	],
